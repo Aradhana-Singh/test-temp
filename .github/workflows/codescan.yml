@@ -24,30 +24,9 @@ jobs:
             organization: aradhana5817
             projectKey: Aradhana-Singh-test-temp    
             login: ${{ secrets.codescan_token }}   
-            codeScanUrl: https://test.codescan.io/
-            generateSarifFile: false
-            args: |
-              codescan.reports.enabled=true
-              codescan.reports.types=sarif
-        - name: Run Codescan On PR
-          if: github.event_name == 'pull_request'
-          uses: codescan-io/codescan-scanner-action@1.2
-          with:
-            organization: aradhana5817
-            projectKey: Aradhana-Singh-test-temp
-            login: ${{ secrets.codescan_token }}
-            codeScanUrl: https://test.codescan.io/
-            args: |
-              sonar.branch.name=${{github.head_ref}}
-              sonar.branch.target=${{github.base_ref}}
-              sonar.branch.type=SHORT       
+            codeScanUrl: https://test.codescan.io/       
         - name: Upload SARIF file
           uses: github/codeql-action/upload-sarif@v1
           with:
             sarif_file: codescan-sarif.json
-        - name: Upload code analysis results
-          uses: actions/upload-artifact@v2
-          with:
-            name: codescan-sarif
-            path: codescan-sarif.json
             
