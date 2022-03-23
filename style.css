@@ -1,3 +1,36 @@
-xyz {
-  color:red;
-}
+@font-face {font-family: 'KONE';src: url('../fonts/kone/KONEInformation.ttf');}
+html {height:100%;width:100%;}
+body {height:100%;width:100%;background: url('../img/login-bg.png') no-repeat;background-size: cover;font-family: 'KONE';}
+/* KONE TEXT COLORS */
+.text-black {color:#000 !important;}
+.text-blue {color:#0071b9 !important;}
+.text-grey {color:#9da7b3 !important;}
+.text-red {color: #c70000 !important;}
+.text-yellow {color:#fbc400 !important;}
+.text-white {color:#fff !important;}
+.text-green {color:#97be0d !important;}
+.btn-transparent {color:#fff;background-color:transparent;text-transform: none; box-shadow:none;-webkit-box-shadow:none;border:1px solid white;}
+.btn-transparent:hover {color:#fff;background-color:#0071b9;text-transform: none; box-shadow:none;-webkit-box-shadow:none;border:1px solid white;}
+.margin-top-20 {margin-top:20px;}
+.margin-top-40 {margin-top:50px;}
+.margin-bottom-5 {margin-bottom:5px;}
+.margin-bottom-8 {margin-bottom:8px;}
+.margin-bottom-15 {margin-bottom:15px;}
+.intro-div {color: #fff;display: inline-block;height:60%;position: relative;top: 80px;width:100%;z-index: 99999;}
+.intro-text{display: block;font-size:18px;}
+.intro-title{display: block;font-size:24px;}
+.intro-div input{background-color:#313131;opacity:0.7;text-align: center;border-radius:0;border:none;height:48px;}
+.intro-div input:active, .intro-div input:focus{box-shadow: none;border:none;}
+.intro-div ::-webkit-input-placeholder {text-align: center;}
+.intro-div :-moz-placeholder { /* Firefox 18- */text-align: center;}
+.intro-div ::-moz-placeholder {  /* Firefox 19+ */text-align: center;}
+.intro-div :-ms-input-placeholder {text-align: center;}
+.login-button {display:block;margin-left:auto;margin-right:auto;width:65px;}
+.login-input {font-size:16px;}
+.change-button {background-image:url('../img/icons/login-btn.png');background-size:65px 65px;height:65px !important;width:65px;background-repeat:no-repeat;background-color:transparent !important;opacity:1 !important;}
+form ul li {list-style-type: none;}
+#success {display:none;}
+#noMatchMessage, #formatMessage {display:none;text-align:left;padding-left:30px;}
+.warning {background-image: url('../img/icons/tip_error.png');background-size: 20px 20px;background-repeat: no-repeat;}
+.warning-changepw {text-align:left;margin;padding-left: 30px;list-style: none;}
+.opacity-0 {opacity:0 !important;}
