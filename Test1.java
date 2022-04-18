@@ -8,6 +8,11 @@ public class Test1 {
     for( ;i == 10;) {
       return false;
     }
+    
+    int j = 5;
+    for( ;j == 10;) {
+      return false;
+    }
     return true;
     
   }
